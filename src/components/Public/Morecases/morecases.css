@@ -1,0 +1,66 @@
+
+
+/* 客户案例样式 */
+.morecases {
+    text-align: center;
+    padding: 32px;
+    margin-top: 21px;
+}
+.morecases > h2 {
+    font-size: 32px;
+    margin-bottom: 7px;
+}
+.morecases > .line {
+    margin-top: 11px;
+    margin-bottom: 14px;
+}
+.casepic {
+    overflow: hidden;
+    height: 0;
+    padding-bottom:62.5%;
+    display: block;
+    border-radius: 4px;
+}
+.cases {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.exhibition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 33.3334%;
+    transition: 0.5s;
+    overflow: hidden;
+    padding:24px 16px;
+    margin-top: 50px;
+}
+@media screen and (max-width: 992px){
+    .exhibition {
+        flex-basis: 50%;
+    }
+}
+@media screen and (max-width: 768px){
+    .exhibition {
+        flex-basis: 100%;
+    }
+}
+img {
+    width: 100%;
+    transition: 0.5s;
+}
+.exhibition:hover img{
+    transform: scale(2);
+    transition: 0.5s;
+}
+.companydesc {
+    margin-top:16px;
+    font-size: 16px;
+}
+.companydesc strong{
+    font-size: 16px;
+}
+
+
+

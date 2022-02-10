@@ -1,0 +1,28 @@
+/******************** 返回顶部 *******************/
+.ant-back-top {
+    right: 108px;
+}
+.backtop {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0,0,0,0.2);
+    color:#fff;
+    font-size: 27px;
+    text-align: center;
+}
+.flexicon {
+    position: relative;
+    top: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flexicon > span {
+    display: block;
+}
+.flexicon > span:nth-child(1) {
+    position: absolute;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}

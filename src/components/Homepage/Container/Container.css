@@ -1,0 +1,153 @@
+
+
+/* 按钮样式 */
+.button>a{
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: 500px;
+    border: 2px solid #e3302b;
+    border-radius: 3px;
+    background: #e3302b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.button>a:before {
+    content:"";
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    left: -2px;
+    top: -2px;
+    transform: scale(0);
+    border-radius: 3px;
+    background: #ab1b17 ;
+    transition: 0.3s;
+}
+a span {
+    z-index: 1;
+}
+.button>a:hover:before {
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+
+
+/* 合作伙伴 */
+.partners {
+    margin-top: 50px;
+    text-align: center;
+    padding: 53px 53px 0;
+}
+.partners>h2 {
+    margin-bottom: 2px;
+    font-size: 32px;
+    font-weight: 400;
+}
+.partners>img {
+    margin:0;
+}
+
+
+
+/* 愿景 */
+.vision {
+    padding:90px 0;    
+    background: linear-gradient(to right, #232323 0%, #232323 30%, #232323 30%, #232323 100%);
+}
+.visionwrap {
+    width: 1140px;
+    margin:0 auto;
+}
+.visiondetail>img {
+    padding:0 32px 0 15px;
+    margin: 0;
+}
+.visiondetail:nth-child(2){
+    padding: 0 15px;
+}
+.visiondetail {
+    flex-basis: 50%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.visiondetail>h3{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 41px;
+}
+.visiondetail > p {
+    line-height: 24px;
+    margin-bottom: 27px;
+}
+@media screen and (max-width: 1200px){
+    .visionwrap {
+        width: 960px;
+    }
+    .visiondetail:nth-child(1){
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 992px){
+    .visionwrap {
+        width: 720px;
+    }
+    .visiondetail:nth-child(1){
+        display: flex;
+        align-items: center;
+    }
+    .visiondetail>img {
+        padding:0 15px;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 768px){
+    .visionwrap {
+        flex-wrap: wrap;
+        width: 540px;
+    }
+    .visiondetail {
+        flex-basis: 100%;
+    }
+    .visiondetail:nth-child(1){
+        display: flex;
+    }
+    .visiondetail>img {
+        padding:0 15px;
+        margin: 0;
+    }
+    .visiondetail>h3{
+        margin-top: 28px;
+        text-align: center;
+        margin-bottom: 41px;
+    }
+    .visiondetail > p {
+        text-align: center;
+    }
+}
+/* 请联系我们 */
+.contacttext {
+    text-align: center;
+    padding-top: 87px;
+    margin-bottom:137px;
+}
+.contacttext > h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+.contacttext > h3 {
+    font-size: 22.4px;
+    font-weight: 300;
+}
+

@@ -1,0 +1,233 @@
+/******************** 标题栏样式 ********************/
+a {
+    color: #fff;
+    font-weight:500;
+}
+a:hover {
+    transition: color .2s ease-in-out;
+    color: #b3b3b3;
+}
+.navbar >div >ul {
+    margin: 0;
+    padding: 0;
+
+}
+.navbar {
+    background-color: #232323;
+    height: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.5em 1em;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+/* 滑动后标题栏样式 */
+.fixedbar {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+}
+
+/******************** 标题栏logo ********************/
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 163px;
+    height: 61px;
+}
+.navbar-brand > img {
+    width: 61px;
+    margin: 0;
+}
+.small-img {
+    width: 146px;
+    transition: 0.3s;
+}
+.small-img > img {
+    width: 48px;
+}
+.navbar-brand > a {
+    font-size: 22.4px;
+    font-weight: 700;
+}
+
+/******************** 标题栏内容 ********************/
+.navbar-content {
+    display: flex;
+    justify-content: flex-end;
+    height: 45px;
+}
+.navbar-button {
+    display: none;
+}
+.navbar-content>ul {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+@media screen and (max-width: 992px) {
+    .navbar-content>ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 64px;
+        z-index: 2;
+        background-color:#232323 ;
+        transition: all 0.6s ease-in-out;
+        overflow: hidden;
+    }
+    .navbar-button {
+        width: 30px;
+        display: flex;
+        position: relative;
+        top: 14.5px;
+        margin-right: 2px;
+    }
+    .navbar-button > span {
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 2px;
+        border-right: 5px;
+        background-color: #ffffff;
+    }
+    .navbar-button > span:nth-child(1) {
+        top:0;
+    }
+    .navbar-button > span:nth-child(2) {
+        top: 8px;
+    }
+    .navbar-button > span:nth-child(3) {
+        top:16px;
+    }
+    .pull-it-down {
+        max-height: 600px;
+    }
+    .pull-it-up {
+        max-height: 0;
+    }
+}
+.navitem > a {
+    font-size: 16px;
+    display: flex;
+    padding:0.667em 1.667em;
+    position: relative;
+
+}
+.navitem > a::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    bottom: -0.5rem;
+    left: 50%;
+    background: linear-gradient(90deg, #232323, #000000);
+    transition: width 200ms linear, left 200ms linear;
+}
+.navitem > a:hover::before {
+    left: 0;
+    width: 100%;
+}
+.successcases > a:hover::before {
+    top: 43px;
+    left: 0;
+    width: 100%;
+}
+/* 成功案例下拉框 */
+.anticon-caret-down >svg {
+    position: relative;
+    top: 5px;
+}
+.navitem .dropdown-menu {
+    position: absolute;
+    box-sizing: border-box;
+    top: 53px;
+    right: 448px;
+    width: 160px;
+    height: 174px;
+    padding:20px 24px;
+    overflow: hidden;
+    background-color: #232323;
+    display: none;
+    transition: 5s all;
+    max-height: 0;
+}
+.successcase>a{
+    display: inline-block;
+    line-height: 28px;
+    height: 28px;
+    text-align: left;   
+    font-weight: 500;
+    font-size: 13px;
+    fill:#fff;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.successcase svg {
+    width: 0;
+    transition: 0.3s all;
+}
+.successcase:hover {
+    color: #b3b3b3;
+}
+.successcase:hover a {
+    color: #b3b3b3;
+}
+.successcase:hover svg {
+    width: 30px;
+    fill:#b3b3b3; 
+}
+.successcases:hover .dropdown-menu {
+    max-height: 600px;
+    display: block;
+    z-index: 1;
+}
+@media screen and (max-width: 992px) {
+    .successcases {
+        text-align: center;
+    }
+    .successcases:hover a {
+        text-align: left;
+        left: 13.5px; 
+    }
+    .navitem .dropdown-menu {
+        position: relative;
+        top: -10px;
+        right: 324px;
+        left: 50%;
+        transform:translateX(-50%);
+        z-index: 0;
+    }
+    .successcase svg,.navitem > a:hover::before {
+        display: none;
+    }
+}
+/* 电话图标样式 */
+.white-outline {
+    display: block;
+    width: 50px;
+    height: 27px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+.white-outline:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 27px;
+    transform: scale(0);
+    border-radius: 3px;
+    background: #fff ;
+    transition: 0.1s;
+}
+.white-outline:hover:after {
+    transform: scale(1);
+    transition: 0.1s;
+}

@@ -1,0 +1,83 @@
+/************ 宣传标题样式 ************/
+.intro {
+    text-align: center;
+    margin:0 auto;
+    padding-top:90px;
+}
+h2 {
+    margin-bottom: 18px;
+    font-size: 22.4px;
+}
+
+
+/************ 解决方案 ************/
+.flexbox {
+    display: flex;
+}
+.solution {
+    padding: 24px 32px 0px;
+}
+.table {
+    margin: 0 32px 48px;
+    padding: 48px;
+    border: 1px solid #efefef;
+    border-radius: 3%;
+    box-sizing:border-box;
+    transition: all 0.3s ease-in-out;
+}
+.table:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #dfe4e8;
+}
+@media screen and (max-width: 1200px){
+    .solution {
+        padding-top:47px;
+        flex-wrap: wrap;
+    }
+    .tablewrap {
+        flex-basis: 50%;
+    }
+    .table {
+        margin: 0 16px 24px;
+    }
+}
+@media screen and (max-width: 768px){
+    .solution {
+        padding-top:47px;
+        flex-wrap: wrap;
+    }
+    .tablewrap {
+        flex-basis: 100%;
+    }
+    .table {
+        margin: 0 16px 24px;
+    }
+}
+
+/* 图片样式 */
+.solutitle {
+    text-align: left;
+}
+.solutitle > img {
+    width: 53px;
+}
+img {
+    margin-bottom: 11px;
+}
+/* 小标题样式 */
+.solutitle > h2 {
+    padding-bottom: 14px;
+}
+/* 解决方案样式 */
+hr {
+    background: #efefef;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+.solucontent > h3 {
+    margin-top: 24px;
+    font-weight: 300;
+    font-size: 16px;
+    color:#767676
+}
+

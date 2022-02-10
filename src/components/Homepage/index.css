@@ -1,0 +1,7 @@
+.homepage .iconphone,.homepage .whitebutton {
+    display: none;
+}
+.homepage .navitem .dropdown-menu{
+    top: 61px;
+    right: 324px;
+}

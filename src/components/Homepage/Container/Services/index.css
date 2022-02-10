@@ -1,0 +1,100 @@
+
+/************ 更多服务样式 ************/
+.services {
+    background-color: #232323;
+    text-align: center;
+    padding:52px 0 15px;
+}
+.services>h2 {
+    font-size: 32px;
+    color:#fff;
+    font-weight: 300;
+    margin-top:0;
+    margin-bottom:14px;
+}
+.line {
+    width: 5rem;
+    height: 3px;
+    background: linear-gradient(90deg, #232323, #000000);
+    display: inline-block;
+}
+/* 服务内容 */
+.servicecontent {
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.service {
+    display: flex;
+    flex-basis: 16.66667%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    padding:16px;
+    position: relative;
+}
+@media screen and (max-width: 1200px){
+    .service {
+        flex-basis: 33.33334%;
+    }
+}
+@media screen and (max-width: 992px){
+    .service {
+        flex-basis: 50%;
+    }
+}
+@media screen and (max-width: 768px){
+    .service {
+        flex-basis: 100%;
+    }
+}
+.service h2 {
+    color:#fff;
+    font-weight: 400;
+    margin-bottom: 12px;
+    line-height: 1em;
+}
+.service h3 {
+    color:#dfe4e8;
+    font-weight: 400;
+}
+/************* 数字背景变化样式*************/
+.servicenum {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:2px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    font-size: 32px;
+    font-weight: 300;
+    margin-top:56px;
+    margin-bottom: 48px;
+    position: relative;
+}
+.servicenum::before {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%;
+    transform: scale(0);
+    background: linear-gradient(45deg, #767676, #232323);
+    position:absolute;
+    transition: 0.3s;
+}
+.servicenum span {
+    z-index: 1;
+}
+.service:hover .servicenum:before {
+    transform: scale(1);
+    transition: 0.3s;
+}
+.service:hover .servicenum {
+    border: 0;
+}
+
